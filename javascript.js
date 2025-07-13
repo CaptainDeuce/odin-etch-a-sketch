@@ -2,14 +2,18 @@ const container = document.querySelector(".container");
 
 function createGrid (squareNumber) {
     for (let i = 0; i < (squareNumber * squareNumber); i++) {
-        let div = document.createElement("div");
-        div.style.border = " 2px solid black";
-        div.style.padding = "51px";
-        container.appendChild(div);
+        if (squareNumber > 100) {
+            break;
+        } else {
+            let div = document.createElement("div");
+            div.style.border = "2px solid black";
+            div.style.padding = `${squareNumber}px`;
+            container.appendChild(div);
 
-        div.addEventListener("mouseenter", () => {
-            div.style.backgroundColor = "purple";
-        });
+            div.addEventListener("mouseenter", () => {
+                div.style.backgroundColor = "purple";
+            });
+        }
     }
 }
 
