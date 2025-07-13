@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     width: 960px;
     height: 960px;
-    border: solid black;
+    border: 2px solid black;
 }
 
 button {
