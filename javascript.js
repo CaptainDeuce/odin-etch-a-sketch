@@ -19,6 +19,7 @@ function createGrid (squareNumber) {
 
 let btn = document.querySelector("button");
 btn.addEventListener("click", () => {
+    container.textContent = "";
     let square = prompt("How many squares per side for the grid? (Max 100)");
     let squareNumber = Number(square);
     createGrid(squareNumber);
