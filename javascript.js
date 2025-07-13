@@ -6,8 +6,8 @@ function createGrid (squareNumber) {
             break;
         } else {
             let div = document.createElement("div");
-            div.style.border = "2px solid black";
-            div.style.padding = `${squareNumber}px`;
+            div.style.width = `${960 / squareNumber}px`;
+            div.style.height = `${960 / squareNumber}px`;
             container.appendChild(div);
 
             div.addEventListener("mouseenter", () => {
