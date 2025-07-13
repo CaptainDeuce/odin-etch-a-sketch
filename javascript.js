@@ -21,8 +21,10 @@ function createGrid (squareNumber) {
             div.style.border = "solid black";
             container.appendChild(div);
 
+            let randomColor = randomRGB();
+
             div.addEventListener("mouseenter", () => {
-                div.style.backgroundColor = "purple";
+                div.style.backgroundColor = randomColor;
             });
         }
     }
