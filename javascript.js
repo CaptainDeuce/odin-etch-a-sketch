@@ -10,3 +10,8 @@ for (let i = 0; i < 256; i++) {
         div.style.backgroundColor = "purple";
     });
 }
+
+let btn = document.querySelector("button");
+btn.addEventListener("click", () => {
+    prompt("How many squares per side for the grid?");
+});
