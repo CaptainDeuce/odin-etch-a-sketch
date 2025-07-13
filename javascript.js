@@ -5,4 +5,8 @@ for (let i = 0; i < 256; i++) {
     div.style.border = " 2px solid black";
     div.style.padding = "51px";
     container.appendChild(div);
+
+    div.addEventListener("mouseenter", () => {
+        div.style.backgroundColor = "purple";
+    });
 }
