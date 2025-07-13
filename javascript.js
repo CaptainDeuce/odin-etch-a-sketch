@@ -8,8 +8,8 @@ function createGrid (squareNumber) {
             break;
         } else {
             let div = document.createElement("div");
-            div.style.width = `${960 / squareNumber}px`;
-            div.style.height = `${960 / squareNumber}px`;
+            div.style.width = `${Math.floor(960 / squareNumber)}px`;
+            div.style.height = `${Math.floor(960 / squareNumber)}px`;
             div.style.border = "solid black";
             container.appendChild(div);
 
@@ -19,6 +19,8 @@ function createGrid (squareNumber) {
         }
     }
 }
+
+createGrid(16);
 
 let btn = document.querySelector("button");
 btn.addEventListener("click", () => {
