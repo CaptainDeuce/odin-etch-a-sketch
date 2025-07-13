@@ -1,6 +1,6 @@
 const container = document.querySelector(".container");
 
-function createGrid (sqaureNumber) {
+function createGrid (squareNumber) {
     for (let i = 0; i < squareNumber; i++) {
         let div = document.createElement("div");
         div.style.border = " 2px solid black";
