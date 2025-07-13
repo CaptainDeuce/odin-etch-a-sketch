@@ -8,3 +8,12 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+button {
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 20px;
+}
