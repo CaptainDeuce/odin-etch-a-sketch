@@ -13,5 +13,5 @@ for (let i = 0; i < 256; i++) {
 
 let btn = document.querySelector("button");
 btn.addEventListener("click", () => {
-    prompt("How many squares per side for the grid?");
+    prompt("How many squares per side for the grid? (Max 100)");
 });
