@@ -1,7 +1,7 @@
 const container = document.querySelector(".container");
 
 function createGrid (squareNumber) {
-    for (let i = 0; i < squareNumber; i++) {
+    for (let i = 0; i < (squareNumber * squareNumber); i++) {
         let div = document.createElement("div");
         div.style.border = " 2px solid black";
         div.style.padding = "51px";
